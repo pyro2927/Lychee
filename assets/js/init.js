@@ -50,7 +50,7 @@ $(document).ready(function(){
 	});
 
 	/* Back Buttons */
-	$("#button_back_home").on(event_name, function() { lychee.goto("") });
+	$("#button_back_home").on(event_name, function() { window.history.go(-1); });
 	$("#button_back").on(event_name, function() { lychee.goto(album.getID()) });
 
 	/* Image View */
